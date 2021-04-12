@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
     - name: Test inside docker
-      run: docker run --rm vieraleonel1/tnt2021:untdf-01-03-test-falla npm test
+      run: docker run --rm vieraleonel1/tnt2021:untdf-01-03-test-pasa npm test
 
   build:
     needs: test
