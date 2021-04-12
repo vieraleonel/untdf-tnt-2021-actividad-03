@@ -1,7 +1,8 @@
 import express from 'express';
 
 // Constants
-const PORT = 3000;
+console.log(process.env.PORT);
+const PORT = process.env.PORT;
 
 // App
 const app = express();
