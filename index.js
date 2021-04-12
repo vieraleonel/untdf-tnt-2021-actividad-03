@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
         </head>
         <body>
             <div style="display: flex; width: 95vw; height: 95vh; justify-content: center; align-items: center;">
-                <h1>Logrado!</h1>
+                <h1>Deploy on Heroku</h1>
             </div>
         </body>
         </html>
