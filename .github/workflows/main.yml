@@ -7,7 +7,15 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  test:
+    # runs on the latest Ubuntu
+    runs-on: ubuntu-latest 
+    steps:
+    - name: Test inside docker
+      run: docker run --rm vieraleonel1/tnt2021:untdf-01-03-test-falla npm test
+
   build:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
